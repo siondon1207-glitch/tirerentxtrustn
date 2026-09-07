@@ -1,23 +1,1513 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://tire.reliabledone.com/ev-tire-rental#service",
+          "name": "전기차타이어렌탈 종합 비교 컨설팅 센터",
+          "serviceType": "전기차 전용 타이어 렌탈 및 정기 점검 관리 서비스",
+          "description": "테슬라, 아이오닉, EV6 등 국내외 전기차 전용 타이어 렌탈 견적 비교, 제휴카드 할인 요금 계산, 무상 파손 보증 및 방문 교체 패키지 안내.",
+          "provider": {
+            "@type": "Organization",
+            "name": "전기차 타이어 모빌리티 케어 센터",
+            "url": "https://tire.reliabledone.com"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "대한민국"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "전기차 전용 타이어 렌탈 요금제 카탈로그",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "넥센타이어 엔페라 슈프림 EV 렌탈",
+                  "description": "전기차 특화 흡음 기술 및 고내마모 컴파운드가 적용된 최고급형 올시즌 렌탈 상품"
+                },
+                "priceCurrency": "KRW",
+                "price": "0",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "0",
+                  "priceCurrency": "KRW",
+                  "unitText": "월 제휴카드 적용 시 최저 실부담금"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "한국타이어 아이온 에보 SUV 렌탈",
+                  "description": "EV 전용 초고성능 타이어로 사계절 그립력과 주행거리 효율을 극대화한 프리미엄 라인"
+                },
+                "priceCurrency": "KRW",
+                "price": "14900",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "14900",
+                  "priceCurrency": "KRW",
+                  "unitText": "월 렌탈 기준가"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "금호타이어 이노뷔 올시즌 EV 렌탈",
+                  "description": "고하중 특화 지지 구조 및 저소음 폼 인서트가 결합된 전기차 전용 타이어"
+                },
+                "priceCurrency": "KRW",
+                "price": "13800",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "13800",
+                  "priceCurrency": "KRW",
+                  "unitText": "월 렌탈 기준가"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://tire.reliabledone.com/ev-tire-rental#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "전기차 타이어는 일반 내연기관 타이어보다 왜 더 빨리 마모되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "전기차는 무거운 대용량 고전압 배터리로 인해 동일 차급 내연기관 차량보다 공차중량이 200kg에서 400kg 이상 더 무겁습니다. 또한 모터 특유의 출발 즉시 발휘되는 강력한 순간 최대 토크와 주행 중 빈번하게 일어나는 회생제동의 감속 하중 이동으로 인해 노면 마찰력이 집중되어 트레드 마모 속도가 내연기관 대비 약 20퍼센트에서 30퍼센트가량 빠르게 진행됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "전기차타이어렌탈을 이용하는 것이 일시불 구매보다 유리한 조건은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "전기차 타이어 4본을 일시불로 교체할 경우 고하중 HL 규격과 흡음재 적용으로 80만 원에서 150만 원 이상의 큰 초기 목돈이 소요됩니다. 렌탈 서비스를 이용하면 초기 목돈 부담 없이 24개월이나 36개월 등으로 월 납입금을 분산할 수 있으며, 전월 실적 제휴카드를 매월 연계하면 월 렌탈료를 대폭 할인받거나 0원까지 낮출 수 있습니다. 아울러 계약 기간 중 사용자 과실로 인한 파손 시에도 무상으로 새 타이어를 교체해 주는 프리미엄 무상 파손 보증 혜택과 휠 얼라인먼트 점검 패키지를 무상으로 누릴 수 있어 장거리 운행자에게 특히 유리합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "렌탈 약정 기간 도중 차량을 중고로 판매하거나 폐차하면 위약금은 얼마인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "렌탈 약정 기간 내에 차량을 조기 처분하거나 중도 해지할 경우 잔여 렌탈료에 대해 공정거래위원회 표준약관 및 계약서 기준 약 10퍼센트에서 20퍼센트 수준의 중도해지 위약금과 등록비, 탈거 물류비가 부과됩니다. 그러나 타이어 렌탈 명의를 승계하거나 장착된 타이어를 분리하여 차기 차량에 규격이 맞을 경우 이전 장착할 수도 있으므로 잔여 계약 기간을 꼼꼼하게 비교 분석한 후 신청하는 것이 권장됩니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --primary-light: #3b82f6;
+            --primary-soft: #eff6ff;
+            --secondary-color: #0d9488;
+            --secondary-soft: #f0fdfa;
+            --accent-warm: #d97706;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border-light: #e2e8f0;
+            --border-medium: #cbd5e1;
+            --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+            --radius-md: 12px;
+            --radius-lg: 18px;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.85;
+            word-break: keep-all;
+            letter-spacing: -0.02em;
+        }
+
+        header, main, section, footer {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-top: 36px;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 50%, #eff6ff 100%);
+            padding: 50px 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-card);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.35rem;
+            color: var(--primary-color);
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.35;
+        }
+
+        .header-meta {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .header-meta span {
+            background-color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+        }
+
+        .header-intro {
+            font-size: 1.12rem;
+            color: var(--text-body);
+            max-width: 880px;
+            margin: 0 auto 30px auto;
+            line-height: 1.9;
+        }
+
+        .nav-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 24px 30px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .nav-card h2 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 16px;
+            border-bottom: 2px solid var(--primary-soft);
+            padding-bottom: 10px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-grid li a {
+            display: block;
+            padding: 10px 14px;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.98rem;
+            font-weight: 600;
+            border: 1px solid var(--border-light);
+            transition: all 0.2s ease;
+        }
+
+        .nav-grid li a:hover {
+            background-color: var(--primary-soft);
+            color: var(--primary-color);
+            border-color: var(--primary-light);
+        }
+
+        article section {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 44px 40px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-card);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 24px;
+            border-left: 6px solid var(--secondary-color);
+            padding-left: 16px;
+            line-height: 1.4;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            color: var(--text-dark);
+            margin-top: 32px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            color: #1e293b;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            color: var(--text-body);
+        }
+
+        strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.03rem;
+        }
+
+        /* Callout Box */
+        .info-callout {
+            background-color: var(--secondary-soft);
+            border-left: 5px solid var(--secondary-color);
+            padding: 24px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 28px 0;
+        }
+
+        .info-callout h4 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+        }
+
+        .info-callout p {
+            margin-bottom: 0;
+            color: #134e4a;
+        }
+
+        .alert-callout {
+            background-color: #fffbeb;
+            border-left: 5px solid var(--accent-warm);
+            padding: 24px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 28px 0;
+        }
+
+        .alert-callout h4 {
+            color: #b45309;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .alert-callout p {
+            margin-bottom: 0;
+            color: #78350f;
+        }
+
+        /* Responsive Table */
+        .table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            margin: 30px 0;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-medium);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: #ffffff;
+            font-size: 0.98rem;
+            min-width: 640px;
+        }
+
+        thead tr {
+            background-color: #f1f5f9;
+            border-bottom: 2px solid var(--border-medium);
+        }
+
+        th {
+            padding: 16px 18px;
+            font-weight: 700;
+            color: var(--text-dark);
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 16px 18px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tbody tr:hover {
+            background-color: #eff6ff;
+        }
+
+        /* Graphical Chart Representation */
+        .chart-box {
+            background-color: #ffffff;
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            margin: 30px 0;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .chart-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .chart-bar-row {
+            margin-bottom: 16px;
+        }
+
+        .chart-label-group {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-body);
+        }
+
+        .bar-container {
+            background-color: #e2e8f0;
+            border-radius: 8px;
+            height: 24px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar-fill-ev {
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .bar-fill-ice {
+            background: linear-gradient(90deg, #94a3b8, #64748b);
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .bar-fill-discount {
+            background: linear-gradient(90deg, #10b981, #059669);
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .bar-fill-retail {
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        /* Definition List */
+        dl {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 24px 28px;
+            margin: 28px 0;
+        }
+
+        dt {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-top: 16px;
+            padding-bottom: 4px;
+        }
+
+        dt:first-of-type {
+            margin-top: 0;
+        }
+
+        dd {
+            margin-left: 0;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed var(--border-medium);
+            color: var(--text-body);
+            line-height: 1.8;
+        }
+
+        dd:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        /* Form Area */
+        .form-container {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 2px solid #bfdbfe;
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-card);
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-size: 1.02rem;
+        }
+
+        .req {
+            color: #dc2626;
+            font-size: 0.85rem;
+            margin-left: 6px;
+            background-color: #fee2e2;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        input[type="text"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border-medium);
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            font-size: 1rem;
+            color: var(--text-dark);
+            transition: all 0.25s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--primary-light);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 0.98rem;
+            cursor: pointer;
+            background-color: #ffffff;
+            padding: 10px 14px;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+        }
+
+        .checkbox-label input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            max-width: 440px;
+            margin: 36px auto 0 auto;
+            padding: 18px 24px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 14px 26px rgba(37, 99, 235, 0.35);
+        }
+
+        .btn-anchor {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 40px;
+            text-decoration: none;
+            box-shadow: 0 8px 16px rgba(13, 148, 136, 0.2);
+            transition: all 0.25s ease;
+        }
+
+        .btn-anchor:hover {
+            background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+            transform: translateY(-2px);
+            color: #ffffff;
+        }
+
+        /* External Links */
+        .external-reference {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 24px;
+        }
+
+        .external-reference ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .external-reference li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 0.98rem;
+        }
+
+        .external-reference li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .external-reference a {
+            color: var(--primary-light);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .external-reference a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+
+        footer {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            text-align: center;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-light);
+            padding-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header, article section {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.45rem;
+            }
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+            .checkbox-grid {
+                grid-template-columns: 1fr;
+            }
+            .btn-submit {
+                font-size: 1.1rem;
+                padding: 16px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>전기차타이어렌탈 종합 비교 및 2026년 다이렉트 가격표 완벽 가이드</h1>
+    <div class="header-meta">
+        <span>발행 기준년도: 2026년 최신 개정판</span>
+        <span>모빌리티 엔지니어링 및 렌탈 컨설팅 분석</span>
+        <span>정보 검증: 전기차 주행 및 타이어 마모 데이터</span>
+    </div>
+    <p class="header-intro">
+        순수 전기차(BEV)는 내연기관 차량과 비교할 수 없을 만큼 무거운 배터리 중량과 출발 즉시 쏟아지는 강력한 순간 토크로 인해 타이어 마모 속도가 2배 이상 빠르게 진행됩니다. 
+        한 번에 100만 원을 훌쩍 넘는 고가의 전기차 전용 타이어 교체 비용을 분산하고, 무상 파손 보증 및 휠 얼라인먼트 점검 패키지를 통해 총소유비용을 절약할 수 있는 
+        <strong>전기차타이어렌탈</strong> 서비스의 전 브랜드 비교, 월 렌탈 요금제, 제휴카드 혜택, 위약금 계산 및 내돈내산 가입 노하우를 상세히 안내합니다.
+    </p>
+    <a href="#quote-form" class="btn-anchor">내 차종 맞춤 최저가 렌탈 견적 계산하기</a>
+</header>
+
+<main>
+    <div class="nav-card">
+        <h2>전기차타이어렌탈 핵심 정보 목차 바로가기</h2>
+        <ul class="nav-grid">
+            <li><a href="#sec-why">1. 전기차 타이어 마모의 메커니즘과 렌탈 필요성</a></li>
+            <li><a href="#sec-comparison">2. 일시불 구매 vs 타이어 렌탈 경제성 비교</a></li>
+            <li><a href="#sec-brands">3. 30대 주요 타이어 모델 및 브랜드 요금표 분석</a></li>
+            <li><a href="#sec-models">4. 대표 전기차 차종별 타이어 규격 및 추천 세팅</a></li>
+            <li><a href="#sec-contract">5. 약정 기간별 요금제와 중도 해지 위약금 기준</a></li>
+            <li><a href="#sec-discounts">6. 제휴카드 혜택 및 월 0원 렌탈 달성 노하우</a></li>
+            <li><a href="#sec-community">7. 자동차 커뮤니티 실제 내돈내산 여론 분석</a></li>
+            <li><a href="#sec-ai-platform">8. 2026년 AI 기반 다이렉트 견적 조회 및 앱 활용법</a></li>
+            <li><a href="#sec-maintenance">9. 전기차 타이어 수명 연장을 위한 유지 관리법</a></li>
+            <li><a href="#sec-faq">10. 자주 묻는 질문 FAQ (파손, 보증, 양도)</a></li>
+            <li><a href="#quote-form">11. 1대1 다이렉트 최저가 맞춤 견적 신청</a></li>
+            <li><a href="#sec-external">12. 신뢰할 수 있는 공식 외부 참고 자료</a></li>
+        </ul>
+    </div>
+
+    <article>
+        <!-- Section 1 -->
+        <section id="sec-why">
+            <h2>1. 전기차 타이어 마모의 메커니즘과 렌탈 필요성</h2>
+            <p>
+                전기차를 처음 출고하여 운행하는 차주들이 2만km에서 3만km 주행 시점에 가장 당혹스러워하는 부분 중 하나는 바로 급격한 <strong>타이어 마모 속도</strong>입니다. 
+                가솔린이나 디젤 세단을 운행할 당시에는 통상 5만km에서 6만km 안팎까지 타이어 교체 없이 주행했던 운전자라도, 현대 아이오닉5, 기아 EV6, 테슬라 모델Y와 같은 전기차를 몰게 되면 
+                불과 2년도 채 되지 않아 트레드 마모 한계선에 도달하는 현상을 흔히 목격하게 됩니다.
+            </p>
+            <p>
+                이러한 비정상적인 마모의 첫 번째 공학적 원인은 <strong>공차중량의 차이</strong>입니다. 차체 하부에 탑재된 70kWh에서 100kWh에 달하는 대용량 리튬이온 배터리 팩의 무게만 해도 
+                450kg에서 600kg에 육박합니다. 이로 인해 동일 차급의 내연기관 SUV 대비 전기차의 공차중량은 적게는 300kg, 많게는 500kg 이상 무겁습니다. 타이어 4본에 전달되는 단위 면적당 
+                수직 하중이 상시 증가해 있는 상태에서 주행이 이루어지기 때문에 노면과의 지속적인 마찰 손실이 훨씬 커집니다.
+            </p>
+            <p>
+                두 번째 원인은 전기 모터 고유의 <strong>순간 최대 토크(Instant Torque) 출력 특성</strong>입니다. 내연기관 엔진은 회전수(RPM)가 특정 영역에 도달해야만 최대 토크가 터져 나오는 반면, 
+                전기차는 정지 상태에서 가속 페달을 밟는 0.1초 만에 모터의 최대 토크가 지면으로 전달됩니다. 이러한 슬립 현상과 미세한 휠 스핀은 운전자가 육안으로 알아차리지 못하는 사이에도 
+                타이어 접지면의 트레드 블록을 깎아 먹는 주원인으로 작용합니다.
+            </p>
+            <p>
+                세 번째 요인은 <strong>회생제동(Regenerative Braking)에 의한 종방향 전단 응력</strong>입니다. 가속 페달에서 발을 떼는 순간 모터가 발전기로 전환되며 강력한 역기전력이 발생하여 
+                차량을 감속시킵니다. 브레이크 패드가 디스크를 물리적으로 압착하는 전통적인 제동 방식과 달리, 회생제동은 구동축을 통해 역방향 토크가 타이어에 직접적인 감속 부하를 가하므로 
+                가속과 감속이 반복되는 도심 주행 패턴에서 타이어 고무 분자 결합이 더욱 가속화되어 마모됩니다.
+            </p>
+
+            <div class="chart-box">
+                <div class="chart-title">차종 파워트레인별 평균 타이어 교체 주기 비교 (단위: 주행거리 km)</div>
+                <div class="chart-bar-row">
+                    <div class="chart-label-group">
+                        <span>일반 내연기관 준중형 세단 타이어 수명</span>
+                        <span>평균 55,000 km</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill-ice" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="chart-bar-row">
+                    <div class="chart-label-group">
+                        <span>전기차 전용 타이어(고하중 HL) 평균 수명</span>
+                        <span>평균 35,000 km</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill-ev" style="width: 55%;"></div>
+                    </div>
+                </div>
+                <div class="chart-bar-row">
+                    <div class="chart-label-group">
+                        <span>전기차에 일반 타이어 장착 시 마모 한계 도달 수명</span>
+                        <span>평균 24,000 km</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill-discount" style="width: 38%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                여기에 더해 전기차 전용 타이어에는 고유한 기술이 적용됩니다. 엔진 소음이 없기 때문에 노면 소음과 타이어 내부 공명음이 탑승 공간으로 그대로 유입되는 것을 방지하기 위해 
+                타이어 안쪽에 특수 폴리우레탄 폼 흡음재(사운드 압소버)가 부착되어 있습니다. 또한 무거운 중량을 지탱하기 위한 고하중 규격(HL, High Load Capacity)과 실리카 함량이 높은 
+                특수 컴파운드가 적용되다 보니 <strong>타이어 1본당 교체 가격이 일반 타이어 대비 30퍼센트에서 60퍼센트가량 비쌉니다.</strong>
+            </p>
+            <p>
+                따라서 2년마다 돌아오는 100만 원에서 160만 원 이상의 교체 비용을 한 번에 일시불로 지출하는 것은 가계 경제에 상당한 부담이 됩니다. 
+                이러한 문제를 해결하기 위해 등장한 것이 바로 <strong>전기차타이어렌탈</strong> 서비스입니다. 초기 계약금 0원으로 최신 전기차 전용 타이어 4본을 즉시 장착하고, 
+                비용을 24개월이나 36개월, 48개월 동안 분할 납부하면서 타이어 파손 무상 보증, 주기적인 휠 얼라인먼트 무상 교정, 1만km 주기 위치교환 서비스까지 원스톱으로 관리받는 
+                구독형 모빌리티 케어가 새로운 소비 트렌드로 확고히 자리 잡았습니다.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="sec-comparison">
+            <h2>2. 일시불 구매 vs 타이어 렌탈 경제성 비교</h2>
+            <p>
+                많은 소비자가 전기차 타이어 교체를 앞두고 가장 깊게 고민하는 지점은 
+                "인터넷 최저가 검색을 통해 타이어를 일시불로 구매하여 공임나라 등에서 장착하는 것이 더 싼곳인가, 아니면 전문 업체의 다이렉트 렌탈 요금제를 이용하는 것이 더 저렴한가?"라는 점입니다.
+                이를 객관적으로 검증하기 위해 차량 1대(타이어 4본 기준)의 36개월 총소유비용(TCO)을 정밀 계산하여 시뮬레이션해 보았습니다.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>비교 항목</th>
+                            <th>온라인 인터넷 일시불 구매 (오프라인 공임 교체)</th>
+                            <th>전기차 타이어 다이렉트 렌탈 (제휴카드 미적용)</th>
+                            <th>전기차 타이어 렌탈 (제휴카드 전월 30만 원 실적)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>초기 결제 비용</td>
+                            <td>약 1,120,000원 - 1,480,000원 (일시불 지출)</td>
+                            <td>0원 (계약금 없음)</td>
+                            <td>0원 (계약금 없음)</td>
+                        </tr>
+                        <tr>
+                            <td>월 납부 요금</td>
+                            <td>0원</td>
+                            <td>월 약 32,000원 - 38,000원 (4본 기준)</td>
+                            <td>월 16,000원 - 22,000원 (월 16,000원 할인)</td>
+                        </tr>
+                        <tr>
+                            <td>36개월 총 납부액</td>
+                            <td>1,120,000원 - 1,480,000원</td>
+                            <td>약 1,152,000원 - 1,368,000원</td>
+                            <td>약 576,000원 - 792,000원</td>
+                        </tr>
+                        <tr>
+                            <td>기본 장착 및 TPMS 공임</td>
+                            <td>본당 15,000원 - 25,000원 별도 청구</td>
+                            <td>전국 제휴 대리점 무료 기본 장착</td>
+                            <td>전국 제휴 대리점 무료 기본 장착</td>
+                        </tr>
+                        <tr>
+                            <td>타이어 파손 무상 보증</td>
+                            <td>원칙적 불가 (소비자 과실 파손 시 자비 재구매)</td>
+                            <td>주행 중 펑크, 파손 시 무상 1대1 신품 교체</td>
+                            <td>주행 중 펑크, 파손 시 무상 1대1 신품 교체</td>
+                        </tr>
+                        <tr>
+                            <td>부가 프리미엄 케어</td>
+                            <td>휠 얼라인먼트 1회당 6만 원 - 10만 원 유상</td>
+                            <td>얼라인먼트 1회 및 위치교환 2회 무상 제공</td>
+                            <td>얼라인먼트 1회 및 위치교환 2회 무상 제공</td>
+                        </tr>
+                        <tr>
+                            <td>최종 경제성 종합 평가</td>
+                            <td>초기 현금 지출 압박 심함, 부가비용 누적</td>
+                            <td>일시불과 거의 대등한 총액, 관리 편의성 우수</td>
+                            <td><strong>일시불 대비 최대 40-50% 이상 비용 절감 성지</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                위 요금표와 계산 결과를 살펴보면 명확한 차이점이 드러납니다. 
+                제휴 신용카드 실적을 전혀 연계하지 않고 순수 렌탈료 전액을 납부하더라도, 정규 장착 공임비 면제, 휠 얼라인먼트 1회 무상 쿠폰(시가 약 7만 원 상당), 
+                주기별 위치교환(2회 기준 약 4만 원 상당), 그리고 주행 중 포트홀이나 못 찔림으로 인한 사이드월 코드 절손 시 신품으로 맞교환해 주는 
+                <strong>파손 보증 보험 혜택</strong>을 감안하면 일시불 구매와 총 지출 금액에서 유의미한 차이가 없습니다.
+            </p>
+            <p>
+                특히 생활비 카드로 전월 30만 원에서 70만 원 수준을 자연스럽게 소비하는 운전자라면 청구할인 혜택을 매달 15,000원에서 20,000원 이상 누적 적용받을 수 있습니다. 
+                이 경우 3년 동안 지출되는 실질 총비용은 60만 원대 안팎으로 떨어지며, 이는 인터넷 오픈마켓에서 가장 싼곳을 뒤져 발품을 파는 것보다 
+                <strong>수십만 원 이상 저렴한 가격</strong>으로 최고급 프리미엄 전기차 전용 타이어를 장착할 수 있는 합리적인 대안이 됩니다.
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="sec-brands">
+            <h2>3. 30대 주요 타이어 모델 및 브랜드 요금표 분석</h2>
+            <p>
+                국내외 타이어 제조사들은 급증하는 전기차 수요에 발맞추어 고유의 친환경 저소음 특화 브랜드를 론칭하고 렌탈 서비스 라인업을 확장하고 있습니다. 
+                대표적인 렌탈 전문 업체인 <strong>넥센타이어 넥스트레벨</strong>을 필두로, <strong>한국타이어</strong>의 아이온(iON) 시리즈, <strong>금호타이어</strong>의 이노뷔(EnnoV) 라인, 
+                그리고 프리미엄 수입 브랜드인 미쉐린, 피렐리, 콘티넨탈까지 다양한 상품 종류가 존재합니다. 
+                다음은 2026년 현재 가장 수요가 높은 주요 전기차 타이어 30종 이상의 예상 렌탈 요금표와 특성 비교 자료입니다.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>순번</th>
+                            <th>제조사 브랜드</th>
+                            <th>대표 모델명 키워드</th>
+                            <th>주요 적용 차종 및 규격</th>
+                            <th>월 렌탈료 기준 (4본/36개월)</th>
+                            <th>핵심 성능 및 특화 장점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>넥센타이어</td>
+                            <td>엔페라 슈프림 EV (N'FERA Supreme EV)</td>
+                            <td>아이오닉5, EV6 19인치 (235/55R19)</td>
+                            <td>월 28,400원</td>
+                            <td>흡음재 내장, 고하중 지지, 컴포트 승차감 최적화</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>넥센타이어</td>
+                            <td>엔페라 슈프림 EV 20인치</td>
+                            <td>아이오닉5, EV6 20인치 (255/45R20)</td>
+                            <td>월 33,600원</td>
+                            <td>고성능 트림 전용 광폭 접지면, 정숙성 특화</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>넥센타이어</td>
+                            <td>로디안 GTX EV (ROADIAN GTX EV)</td>
+                            <td>기아 EV9, 코나 EV, 니로 EV (215/55R17)</td>
+                            <td>월 26,800원</td>
+                            <td>전기 SUV 전용 마일리지 강화 컴파운드 탑재</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>넥센타이어</td>
+                            <td>엔페라 스포츠 EV (N'FERA Sport EV)</td>
+                            <td>테슬라 모델3, EV6 GT (245/40R20)</td>
+                            <td>월 35,200원</td>
+                            <td>초고속 고토크 코너링 그립력 및 제동 성능 우수</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>한국타이어</td>
+                            <td>아이온 에보 (iON evo)</td>
+                            <td>테슬라 모델3 하이랜드 18인치 (235/45R18)</td>
+                            <td>월 34,000원</td>
+                            <td>전비 효율 극대화 저구름저항, 소음 억제 사운드 압소버</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>한국타이어</td>
+                            <td>아이온 에보 SUV (iON evo SUV)</td>
+                            <td>테슬라 모델Y 19인치, 아이오닉5 20인치</td>
+                            <td>월 38,500원</td>
+                            <td>중량급 전기 SUV 전용 하중 분산 및 핸들링 안정성</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>한국타이어</td>
+                            <td>아이온 플렉스클라이밋 (iON FlexClimate)</td>
+                            <td>아이오닉6, 테슬라 모델3 (225/55R18)</td>
+                            <td>월 33,200원</td>
+                            <td>사계절 전천후 올웨더 인증 3PMSF 획득 타이어</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>한국타이어</td>
+                            <td>아이온 플렉스클라이밋 SUV</td>
+                            <td>기아 EV6, 제네시스 GV60 (235/55R19)</td>
+                            <td>월 37,800원</td>
+                            <td>눈길 및 젖은 노면 접지력과 EV 저소음 밸런스</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>한국타이어</td>
+                            <td>아이온 아이셉트 (iON i*cept 윈터)</td>
+                            <td>전기차 전 차종 겨울용 스노우 규격</td>
+                            <td>월 36,000원</td>
+                            <td>겨울철 저온 환경 배터리 소모 억제 및 슬립 방지</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>한국타이어</td>
+                            <td>벤투스 S1 에보3 EV</td>
+                            <td>포르쉐 타이칸, 아우디 e-트론 출고형</td>
+                            <td>월 46,000원</td>
+                            <td>유럽 프리미엄 전기차 순정 OE 공급 규격</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>금호타이어</td>
+                            <td>이노뷔 프리미엄 (EnnoV Premium)</td>
+                            <td>제네시스 GV70 전동화 모델 (255/45R20)</td>
+                            <td>월 36,500원</td>
+                            <td>HLC 초고하중 전용 규격 적용, 럭셔리 승차감</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>금호타이어</td>
+                            <td>이노뷔 올시즌 (EnnoV All-Season)</td>
+                            <td>아이오닉5, EV6 19/20인치 공용 규격</td>
+                            <td>월 31,800원</td>
+                            <td>사계절 트레드 패턴, 경제적인 내마모 마일리지 보장</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>금호타이어</td>
+                            <td>이노뷔 윈터 (EnnoV Winter)</td>
+                            <td>테슬라 모델Y, GV60 윈터 라인업</td>
+                            <td>월 35,000원</td>
+                            <td>빙판길 제동 성능 강화 EV 전용 스터드리스 패턴</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>금호타이어</td>
+                            <td>크루젠 HP71 EV</td>
+                            <td>기아 EV9, 현대 팰리세이드 하이브리드</td>
+                            <td>월 30,500원</td>
+                            <td>패밀리 SUV 전용 저진동 구조 설계</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>금호타이어</td>
+                            <td>마제스티9 EV SOLUS TA91</td>
+                            <td>제네시스 G80 전동화, 그랜저 EV</td>
+                            <td>월 32,800원</td>
+                            <td>국내 최고 수준의 정숙성과 잔진동 필터링 능력</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>미쉐린</td>
+                            <td>e-프라이머시 (e-Primacy)</td>
+                            <td>테슬라 모델3, 푸조 e-208 (215/50R17)</td>
+                            <td>월 41,000원</td>
+                            <td>동급 최강의 주행거리 연장 회전저항 효율</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>미쉐린</td>
+                            <td>파일럿 스포츠 EV (Pilot Sport EV)</td>
+                            <td>포르쉐 타이칸, 테슬라 모델S 플래드</td>
+                            <td>월 52,000원</td>
+                            <td>포뮬러 E 레이싱 기술 집약 스포츠 주행성</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>미쉐린</td>
+                            <td>크로스클라이밋2 EV 규격 (CC2)</td>
+                            <td>아이오닉5, 테슬라 모델Y (255/45R20)</td>
+                            <td>월 43,500원</td>
+                            <td>V자형 트레드 사계절 전천후 배수 및 윈터 대응</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>피렐리</td>
+                            <td>피제로 일렉트 (P Zero Elect)</td>
+                            <td>BMW i4, i7, 제네시스 GV60 퍼포먼스</td>
+                            <td>월 48,000원</td>
+                            <td>초고출력 듀얼 모터 가속력 완벽 대응</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>피렐리</td>
+                            <td>스콜피온 일렉트 (Scorpion Elect)</td>
+                            <td>메르세데스-벤츠 EQE SUV, 테슬라 모델X</td>
+                            <td>월 49,500원</td>
+                            <td>대형 럭셔리 전기 SUV 전용 지지력 및 흡음 기술</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>콘티넨탈</td>
+                            <td>에코컨택트 6 Q EV (EcoContact 6 Q)</td>
+                            <td>폭스바겐 ID.4, 아우디 Q4 e-트론</td>
+                            <td>월 39,800원</td>
+                            <td>패턴 피치 최적화로 공명 소음 최소화</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>콘티넨탈</td>
+                            <td>프리미엄컨택트 6 EV 사양</td>
+                            <td>볼보 EX30, 폴스타 2 (245/40R19)</td>
+                            <td>월 42,000원</td>
+                            <td>젖은 노면 제동 A등급 안전성 확보</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>브리지스톤</td>
+                            <td>투란자 EV (Turanza EV)</td>
+                            <td>테슬라 전 차종 맞춤 교체 규격</td>
+                            <td>월 38,900원</td>
+                            <td>픽스트레드 신소재 컴파운드 마모 저항성</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>굿이어</td>
+                            <td>이글 F1 어시메트릭 5 EV 사양</td>
+                            <td>기아 EV6 GT 21인치 규격</td>
+                            <td>월 47,000원</td>
+                            <td>고속 주행 안정성 및 차선 변경 반응속도 탁월</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>넥센타이어</td>
+                            <td>엔페라 프리머스 QX EV</td>
+                            <td>기아 니로 플러스, 코나 일렉트릭 영업용</td>
+                            <td>월 24,500원</td>
+                            <td>택시 및 영업용 전기차 특화 고내구성 가성비 모델</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>한국타이어</td>
+                            <td>키너지 EV (Kinergy EV)</td>
+                            <td>르노 조에, 쉐보레 볼트 EV (215/50R17)</td>
+                            <td>월 25,800원</td>
+                            <td>소형 도심형 전기차 전비 개선 실속 요금제</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>금호타이어</td>
+                            <td>솔루스 TA31 EV 규격</td>
+                            <td>현대 포터2 일렉트릭 전륜 규격 (195/70R15)</td>
+                            <td>월 19,800원</td>
+                            <td>소형 전기 상용차 전륜 조향 및 완충 성능</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>금호타이어</td>
+                            <td>포트란 KC53 EV 상용 후륜</td>
+                            <td>기아 봉고3 EV 후륜 복륜 (145R13C)</td>
+                            <td>월 18,500원</td>
+                            <td>초고하중 화물 적재용 카카스 플라이 보강</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>미쉐린</td>
+                            <td>프라이머시 4 ST 사운드 컴포트</td>
+                            <td>테슬라 모델3 초기 출고용 리플레이스</td>
+                            <td>월 39,500원</td>
+                            <td>사운드 폼 흡음재 내장, 고속 크루징 특화</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>피렐리</td>
+                            <td>친투라토 올시즌 SF2 일렉트</td>
+                            <td>현대 아이오닉6 18인치 (225/55R18)</td>
+                            <td>월 40,500원</td>
+                            <td>유럽 윈터 인증 유럽형 올웨더 프리미엄</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                상기 요금표에서 나타나듯 국산 브랜드인 <strong>넥센 엔페라 슈프림 EV</strong>나 <strong>한국타이어 아이온</strong>의 경우, 
+                본당 월 6,000원에서 9,000원대(4본 합산 기준 2만 원대 후반에서 3만 원대 중반) 수준의 합리적인 요금으로 책정되어 있습니다. 
+                여기에 제휴카드 할인을 연계하면 월 실부담금이 1만 원 안팎으로 크게 떨어져 소비자 체감 만족도가 매우 높습니다.
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="sec-models">
+            <h2>4. 대표 전기차 차종별 타이어 규격 및 추천 세팅 가이드</h2>
+            <p>
+                전기차는 트림과 휠 인치 수에 따라 출고 규격이 완전히 다르며, 잘못된 하중 지수의 타이어를 장착할 경우 차체 떨림, 주행거리 급감, 
+                심지어 타이어 사이드월 파열로 이어질 위험이 있습니다. 대표 차종별 표준 제원과 렌탈 매칭 팁을 소개합니다.
+            </p>
+
+            <h3>테슬라 모델Y 및 모델3 세팅 팁</h3>
+            <p>
+                테슬라 모델Y는 전 세계에서 가장 많이 판매된 전기 SUV인 만큼 타이어 교체 수요가 가장 높습니다. 
+                롱레인지 트림은 <strong>255/45R19</strong> 규격을 사용하며, 퍼포먼스 트림은 전륜 255/35R21, 후륜 275/35R21의 전후 이종 규격을 채택합니다. 
+                모델Y는 차체가 단단하고 하체 서스펜션이 단단하게 세팅되어 있어 노면 잔진동이 여과 없이 전달되는 편입니다. 
+                따라서 렌탈 시 부드러운 승차감과 저소음을 원한다면 <strong>한국타이어 아이온 에보 SUV</strong>나 <strong>넥센 엔페라 슈프림 EV</strong>를 선택하는 것이 가장 유리하며, 
+                겨울철 강원도나 교외 주행이 잦다면 <strong>아이온 플렉스클라이밋</strong> 올웨더 모델을 추천합니다.
+            </p>
+
+            <h3>현대 아이오닉5 및 기아 EV6 가이드</h3>
+            <p>
+                현대 E-GMP 플랫폼 형제 차량인 아이오닉5와 EV6는 기본형 트림에 <strong>235/55R19</strong>, 상위 트림에 <strong>255/45R20</strong> 규격이 적용됩니다. 
+                특히 20인치 휠은 타이어 폭이 넓어 고속 주행 안정성은 뛰어나지만 전비 손실과 타이어 가격이 만만치 않습니다. 
+                이 차종들은 차체 내부 방음이 훌륭하게 설계되어 있으므로 타이어 내부 폼(Foam)이 탑재된 전용 제품을 장착해야 공명음을 완벽하게 차단할 수 있습니다. 
+                가성비와 렌탈 할인 혜택을 극대화하고자 할 때는 <strong>넥센 넥스트레벨의 엔페라 슈프림 EV 20인치 요금제</strong>를 통해 월 1만 원대 실납부 설계를 진행하는 것이 정석으로 꼽힙니다.
+            </p>
+
+            <h3>기아 EV9 및 대형 전기 SUV 전용 고하중 HLC 세팅</h3>
+            <p>
+                공차중량이 2.6톤에 육박하는 기아 EV9은 <strong>285/45R21</strong>이라는 거대한 타이어 규격을 장착합니다. 
+                이처럼 극단적으로 무거운 패밀리 대형 SUV는 일반 타이어 장착 시 코너를 돌 때 타이어 숄더부가 급격히 무너져 조종 안정성이 심각하게 저하됩니다. 
+                따라서 반드시 고하중 보강 규격인 <strong>HLC(High Load Capacity)</strong> 등급이 부여된 전용 타이어(예: 금호 이노뷔 프리미엄 또는 한국타이어 아이온 에보 SUV)를 렌탈해야만 
+                안전과 타이어 수명을 동시에 보장받을 수 있습니다.
+            </p>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="sec-contract">
+            <h2>5. 약정 기간별 요금제와 중도 해지 위약금 기준</h2>
+            <p>
+                전기차타이어렌탈을 진행할 때 계약서에서 반드시 확인해야 하는 핵심 요소는 <strong>약정 개월 수</strong>와 <strong>해지 시 발생하는 위약금 규정</strong>입니다. 
+                렌탈은 정수기나 공기청정기 리스와 유사한 금융 결합 서비스이므로 계약 조건을 정확하게 인지해야 불필요한 분쟁을 예방할 수 있습니다.
+            </p>
+
+            <h3>약정 기간의 종류 (12개월, 24개월, 36개월, 48개월)</h3>
+            <ul>
+                <li><strong>12개월/1년 단기 약정:</strong> 주행거리가 연간 4만km를 초과하는 영업용 차량이나 장거리 출퇴근 차주에게 적합합니다. 월 렌탈료는 다소 높지만 짧은 기간 내에 마모된 타이어를 신품으로 빠르게 교체할 수 있습니다.</li>
+                <li><strong>24개월 약정:</strong> 전기차의 일반적인 평균 교체 주기(약 3만-4만km)에 가장 부합하는 표준 플랜으로, 약정 종료 후 즉시 소유권이 무상 이전되거나 신규 타이어로 재계약하기 수월합니다.</li>
+                <li><strong>36개월 알뜰 약정:</strong> 월 납입금 부담을 최소화하면서 3년간 안정적인 보증 케어를 받고자 하는 일반 출퇴근 운전자들이 가장 많이 선택하는 베스트셀러 요금제입니다.</li>
+                <li><strong>48개월 초슬림 약정:</strong> 연간 주행거리가 1만km 미만으로 짧아 타이어 마모 속도가 더딘 운전자에게 적합하며, 월 납입금을 커피 몇 잔 값으로 낮출 수 있습니다.</li>
+            </ul>
+
+            <div class="alert-callout">
+                <h4>중도 해지 위약금 산정 공식 안내</h4>
+                <p>
+                    계약 기간 도중 차량을 조기 매각하거나 폐차하여 렌탈을 해지할 경우 위약금이 청구됩니다. 
+                    일반적인 위약금 계산 공식은 <strong>[잔여 개월 수 총 렌탈료 × 위약금률(약 10% - 20%) + 잔여 타이어 원금 가액 정산 + 등록비/탈거 공임]</strong>으로 이루어집니다. 
+                    타이어는 한 번 장착하여 주행하면 중고품으로 재판매가 불가능한 소모성 자산 특성을 지니고 있으므로, 렌탈 신청 전 본인의 차량 유지 계획을 면밀히 검토해야 합니다.
+                </p>
+            </div>
+
+            <p>
+                만약 차량을 중고로 처분하더라도 타이어 렌탈 계약을 승계(양도)하는 방법이 존재합니다. 
+                구매자에게 잔여 렌탈료와 풍성한 무상 보증 케어 서비스를 그대로 넘겨주거나, 타이어를 탈거하여 보관한 뒤 동일 휠 규격을 사용하는 다음 차량에 장착하는 방식도 가능하므로 
+                고객센터와의 사전 상담을 통해 위약금 지출을 최소화하는 전략이 요구됩니다.
+            </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="sec-discounts">
+            <h2>6. 제휴카드 혜택 및 월 0원 렌탈 달성 노하우</h2>
+            <p>
+                전기차타이어렌탈의 경제성을 논할 때 결코 빠질 수 없는 핵심 비법이 바로 <strong>제휴 신용카드 청구할인 혜택</strong>입니다. 
+                렌탈 본사(넥센타이어 넥스트레벨, 한국타이어 티스테이션 등)는 주요 카드사(KB국민, 현대, 신한, 롯데, 우리, 하나 등)와 제휴하여 
+                매월 전월 이용 실적 구간에 따라 파격적인 청구할인 프로모션을 운영하고 있습니다.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>제휴 카드사 구분</th>
+                            <th>전월 승인 실적 기준</th>
+                            <th>매월 청구할인 금액</th>
+                            <th>36개월 누적 할인 총액</th>
+                            <th>비고 및 특화 혜택</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>넥센타이어 제휴 KB국민카드</td>
+                            <td>전월 실적 30만 원 이상</td>
+                            <td>매월 16,000원 할인</td>
+                            <td>576,000원 세이브</td>
+                            <td>아파트 관리비 및 통신비 실적 인정</td>
+                        </tr>
+                        <tr>
+                            <td>넥센타이어 제휴 롯데카드</td>
+                            <td>전월 실적 30만 원 이상</td>
+                            <td>매월 15,000원 - 18,000원</td>
+                            <td>최대 648,000원 할인</td>
+                            <td>신규 발급 이벤트 시 첫달 추가 캐시백</td>
+                        </tr>
+                        <tr>
+                            <td>한국타이어 제휴 신한카드</td>
+                            <td>전월 실적 40만 원 이상</td>
+                            <td>매월 15,000원 할인</td>
+                            <td>540,000원 세이브</td>
+                            <td>전국 티스테이션 추가 포인트 적립 연계</td>
+                        </tr>
+                        <tr>
+                            <td>렌탈 플러스 우리/하나카드</td>
+                            <td>전월 실적 70만 원 이상</td>
+                            <td>매월 20,000원 - 23,000원</td>
+                            <td>최대 828,000원 할인</td>
+                            <td>주유 및 전기차 충전 요금 결제 시 고액 할인</td>
+                        </tr>
+                        <tr>
+                            <td>하이엔드 VIP 제휴 플랜</td>
+                            <td>전월 실적 120만 원 이상</td>
+                            <td>매월 25,000원 할인</td>
+                            <td>900,000원 세이브</td>
+                            <td>프리미엄 수입 전기 타이어 전액 상쇄 가능</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                예를 들어 월 렌탈 요금이 15,800원으로 책정된 준중형 전기차 타이어 상품을 계약하고, 
+                전월 30만 원 사용 시 16,000원을 깎아주는 제휴카드로 자동이체를 걸어두면 <strong>실제 통장에서 인출되는 월 렌탈료는 0원</strong>이 됩니다. 
+                일상적인 식비, 마트 장보기, 대중교통 이용료나 전기차 완속/급속 충전 요금을 해당 카드로 결제하는 것만으로도 
+                고가의 새 타이어 4본을 공짜에 가깝게 유지하면서 정기적인 무상 점검까지 덤으로 누리는 스마트한 소비가 가능해집니다.
+            </p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="sec-community">
+            <h2>7. 자동차 커뮤니티 실제 내돈내산 여론 분석</h2>
+            <p>
+                국내 대형 자동차 포럼인 <strong>보배드림</strong>, <strong>디시인사이드 차갤(자동차 갤러리)</strong>, <strong>에펨코리아(펨코)</strong> 자동차 게시판 및 
+                테슬라, 아이오닉 동호회 네이버 카페 등에서 오가는 전기차타이어렌탈에 대한 실제 유저들의 후기와 솔직한 평가를 종합 분석하였습니다.
+            </p>
+
+            <h3>보배드림 및 동호회 차주들의 호평 포인트</h3>
+            <p>
+                커뮤니티 내에서 가장 높은 만족도를 보이는 부분은 단연 <strong>무상 파손 보증 제도</strong>였습니다. 
+                전기차는 차량 중량이 무거워 도로 위의 포트홀을 밟았을 때 타이어 측면 사이드월이 부풀어 오르는 코드 절손 현상이 내연기관 차량에 비해 훨씬 빈번하게 발생합니다. 
+                일반 일시불 구매였다면 30만 원이 넘는 새 타이어를 통째로 자비 구매해야 하지만, 렌탈 서비스를 이용하던 차주들은 전국 제휴 대리점에 방문하여 
+                무상으로 새 타이어를 즉시 장착받고 가슴을 쓸어내렸다는 내돈내산 인증 후기들이 지속적으로 공유되고 있습니다.
+            </p>
+
+            <h3>디시인사이드 및 펨코에서 지적하는 주의사항</h3>
+            <p>
+                반면 비판적이거나 현실적인 조언이 주를 이루는 커뮤니티에서는 <strong>제휴카드 실적 관리의 번거로움</strong>을 단점으로 꼽았습니다. 
+                전월 실적이 단 1만 원이라도 미달할 경우 해당 월의 청구할인이 통째로 누락되어 본래 렌탈료가 그대로 결제되므로, 
+                서브 카드로 실적을 맞추기 부담스러워하는 운전자들은 오히려 스트레스를 받을 수 있다는 지적입니다. 
+                또한 주행거리가 1년에 5천km 미만으로 매우 적은 운전자의 경우 굳이 렌탈의 잦은 교체 혜택을 온전히 활용하기 어려우므로, 
+                자신의 연간 주행거리와 카드 소비 패턴을 철저히 계산해 보고 결정하라는 성지 좌표 및 꿀팁 글들이 많은 공감을 얻고 있습니다.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="sec-ai-platform">
+            <h2>8. 2026년 AI 기반 다이렉트 견적 조회 및 앱 활용법</h2>
+            <p>
+                2026년 현재 모빌리티 렌탈 시장은 인공지능(AI) 및 스마트 모바일 기술과 완벽하게 결합되어 과거와 비교할 수 없을 만큼 간편해졌습니다. 
+                과거에는 일일이 타이어 매장에 전화를 걸어 휠 사이즈를 읊어주며 재고 유무를 확인해야 했지만, 이제는 스마트폰 전용 <strong>어플리케이션과 포털 플랫폼</strong>을 통해 
+                1분 만에 차량 번호만으로 모든 세부 규격과 최적의 요금제를 한눈에 도출해 냅니다.
+            </p>
+
+            <h3>네이버, 토스, 카카오톡 금융 연계 원스톱 플랫폼</h3>
+            <p>
+                토스(Toss)나 네이버페이, 카카오톡 모빌리티 플랫폼에 차량 번호를 등록해 두면, 마이데이터 연동을 통해 현재 내 차량의 정확한 휠 규격(인치, 편평비, 하중지수)이 자동 인식됩니다. 
+                이에 맞춰 넥센, 한국, 금호 등 주요 렌탈사의 실시간 재고와 가장 저렴한곳 순위, 카드사별 최대 캐시백 지원금 이벤트가 화면에 바로 정렬되어 투명한 가격 비교가 가능합니다.
+            </p>
+
+            <h3>제미나이 및 챗지피티 등 대화형 AI 컨설팅 접목</h3>
+            <p>
+                나아가 제미나이(Gemini)나 챗지피티(ChatGPT)와 같은 거대언어모델(LLM) 기반의 AI 어시스턴트에게 
+                "나는 일산에서 판교까지 왕복 100km를 출퇴근하는 테슬라 모델Y 운전자인데, 조용하면서도 마일리지가 오래가는 타이어 렌탈 상품과 제휴카드 조합을 추천해줘"라고 자연어로 질문하면, 
+                방대한 데이터베이스를 순식간에 분석하여 최적의 타이어 모델(예: 아이온 에보 SUV vs 엔페라 슈프림 EV)과 3년 총비용 계산 견적서를 친절하게 작성해 줍니다. 
+                이러한 최첨단 AI 다이렉트 솔루션 덕분에 소비자들은 정보 비대칭 없이 가장 스마트한 선택을 내릴 수 있습니다.
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="sec-maintenance">
+            <h2>9. 전기차 타이어 수명 연장을 위한 유지 관리법</h2>
+            <p>
+                전기차타이어렌탈을 통해 주기적인 관리 서비스를 제공받더라도, 운전자 본인이 일상 주행에서 올바른 관리 습관을 유지한다면 
+                타이어 트레드 수명을 1.5배 이상 비약적으로 연장하고 안전성을 극대화할 수 있습니다.
+            </p>
+
+            <h3>적정 공기압 유지 (냉간 시 기준 권장 압력 준수)</h3>
+            <p>
+                전기차는 차체 하중이 무겁기 때문에 타이어 공기압이 조금만 낮아져도 숄더부에 편마모가 급격히 발생하며 회전저항이 커져 전비가 크게 악화됩니다. 
+                차량 운전석 B필러 안쪽에 부착된 라벨의 권장 공기압(통상 38psi에서 42psi 수준)을 확인하고, 
+                반드시 주행 전 타이어가 차갑게 식어 있는 냉간 상태에서 월 1회 주기로 공기압을 체크하여 보충해 주는 것이 필수적입니다.
+            </p>
+
+            <h3>10,000km 주기 위치교환(로테이션) 실천</h3>
+            <p>
+                후륜 구동(RWD) 기반의 전기차는 뒷바퀴의 마모가 앞바퀴보다 2배 이상 빠르게 진행되며, 전륜 구동 기반 전기차는 앞바퀴가 조향과 가속을 동시에 담당하여 편마모가 심합니다. 
+                렌탈 상품에 포함된 무상 위치교환 서비스를 활용하여 <strong>매 1만km 주행 시점마다 앞뒤 타이어의 위치를 교차 교환</strong>해 주면 
+                4본의 트레드가 균일하게 소모되어 조기 교체 없이 약정 기간 내내 최상의 그립력을 누릴 수 있습니다.
+            </p>
+
+            <h3>회생제동 단계 최적화 및 급가속 지양</h3>
+            <p>
+                원페달 드라이빙(회생제동 최고 단계)은 편리하고 전비 향상에 도움이 되지만, 가속 페달을 거칠게 떼는 습관은 타이어 접지면에 지속적인 역토크 충격을 가합니다. 
+                노면이 고르지 못한 도로에서는 회생제동 단계를 1단계나 2단계 수준으로 부드럽게 세팅하고, 
+                신호 대기 후 출발 시 급출발을 자제하는 것만으로도 타이어 고무의 전단 손실을 대폭 줄일 수 있습니다.
+            </p>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="sec-faq">
+            <h2>10. 자주 묻는 질문 FAQ</h2>
+            <dl>
+                <dt>Q1. 렌탈로 공급되는 타이어는 일반 시중에서 판매되는 정품 타이어와 품질 차이가 있나요?</dt>
+                <dd>
+                    전혀 차이가 없습니다. 넥센, 한국, 금호 등 각 제조사 공장에서 정식 생산된 최신 주차(DOT)의 100퍼센트 정품 타이어가 공급됩니다. 
+                    유통 마진과 초기 구매 비용을 분산한 구독형 판매 방식일 뿐이며, 시중 대리점에서 일시불로 구매하는 것과 완벽히 동일한 제품 성능과 안전 등급을 지닙니다.
+                </dd>
+
+                <dt>Q2. 주행 중 도로 파손이나 못으로 인해 펑크가 났을 때 무상 파손 보증은 어떻게 받나요?</dt>
+                <dd>
+                    타이어 파손 보증 특약이 포함된 렌탈 상품 가입 고객은 주행 중 포트홀 충격으로 인한 사이드월 부풀림(코드 절손)이나 수리 불가능한 펑크 발생 시, 
+                    고객센터에 사고를 접수한 후 인근 지정 장착점에 방문하시면 잔여 마모율 기준에 따라 1대1 무상 새 타이어로 교체받으실 수 있습니다.
+                </dd>
+
+                <dt>Q3. 약정 기간이 만료되면 장착된 타이어는 반납해야 하나요?</dt>
+                <dd>
+                    아닙니다. 계약 만기 시 타이어는 고객님께 100퍼센트 소유권이 무상으로 완전 이전됩니다. 
+                    반납 의무가 전혀 없으며, 타이어 마모 상태에 따라 그대로 계속 주행하시거나 차기 신규 렌탈 상품으로 갱신 재가입을 진행하실 수 있습니다.
+                </dd>
+
+                <dt>Q4. 제휴카드를 매월 반드시 사용해야만 렌탈 계약이 유지되는 것인가요?</dt>
+                <dd>
+                    그렇지 않습니다. 제휴카드는 월 렌탈료를 할인받기 위한 선택적 수단일 뿐입니다. 
+                    특정 달에 카드 실적을 채우지 못하더라도 계약이 해지되거나 불이익을 받는 것이 아니며, 해당 월만 카드 할인 없이 원래의 정규 렌탈료가 청구되고 
+                    다음 달에 다시 실적을 채우면 자동으로 청구할인이 정상 재개됩니다.
+                </dd>
+
+                <dt>Q5. 전기차 렌탈 타이어 교체 시 휠 얼라인먼트는 언제 받는 것이 가장 좋나요?</dt>
+                <dd>
+                    전기차는 차량 중량으로 인해 하체 링크에 하중이 많이 걸리므로 새 타이어를 장착하는 당일에 휠 얼라인먼트를 즉시 교정받는 것이 가장 이상적입니다. 
+                    틀어진 하체 각도를 바로잡아 놓지 않고 주행을 시작하면 수백 km 만에 이상 마모가 시작될 수 있으므로 무상 얼라인먼트 쿠폰을 장착 당일 사용하는 것을 권장합니다.
+                </dd>
+
+                <dt>Q6. 윈터 타이어(겨울용 스노우 타이어)도 렌탈 패키지로 이용할 수 있나요?</dt>
+                <dd>
+                    예, 가능합니다. 사계절용 타이어와 윈터 타이어를 결합하여 계절마다 탈부착 및 보관(호텔 서비스)까지 한꺼번에 대행해 주는 올시즌 윈터 결합 렌탈 패키지가 마련되어 있습니다. 
+                    집에 무거운 타이어를 보관할 장소가 마땅치 않은 아파트 거주 차주분들에게 매우 큰 인기를 얻고 있습니다.
+                </dd>
+
+                <dt>Q7. 타이어 4본이 아니라 마모가 심한 앞바퀴나 뒷바퀴 2본만 부분 렌탈하는 것도 가능한가요?</dt>
+                <dd>
+                    예, 2본 단위 부분 렌탈도 가능합니다. 하지만 전기차의 구동 밸런스와 회생제동 접지력 배분을 고려할 때 가급적 4본을 동시에 교체하여 
+                    주기적인 위치교환으로 균일하게 관리하는 것이 주행 안정성과 경제성 양면에서 훨씬 권장됩니다.
+                </dd>
+
+                <dt>Q8. 렌탈 계약 도중 차량을 타인에게 중고로 판매할 경우 승계 절차는 어떻게 되나요?</dt>
+                <dd>
+                    차량 매수인(새 차주)의 동의를 얻어 간단한 신용 조회 및 명의 변경 서류를 접수하면 렌탈 잔여 개월 수와 납부 의무, 파손 보증 권리가 새 차주에게 그대로 승계됩니다. 
+                    승계가 완료되면 매도인은 일체의 해지 위약금 부담에서 벗어날 수 있습니다.
+                </dd>
+
+                <dt>Q9. 장착은 집 근처 어디에서 진행할 수 있나요?</dt>
+                <dd>
+                    전국 수천 개에 달하는 직영점 및 지정 협력 대리점(예: 넥센 타이어테크, 한국 타이어 티스테이션 등) 중 고객님의 자택이나 직장에서 가장 가까운 곳을 지정하여 방문 장착하실 수 있으며, 
+                    수도권 및 주요 광역시의 경우 집 앞 주차장으로 전문 장착 차량이 직접 찾아가는 프리미엄 방문 장착 서비스도 신청하실 수 있습니다.
+                </dd>
+
+                <dt>Q10. 개인 사업자나 법인 명의 차량도 세금계산서 발행 및 경비 처리가 가능한가요?</dt>
+                <dd>
+                    예, 전액 100퍼센트 가능합니다. 사업자 명의로 렌탈 계약 시 매월 납부하는 렌탈료에 대해 세금계산서가 자동 발행되며, 
+                    부가가치세 매입세액 공제 및 종합소득세, 법인세 신고 시 차량 유지 관리비 항목으로 전액 손비(경비) 처리가 인정되어 절세 효과가 뛰어납니다.
+                </dd>
+            </dl>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="quote-form">
+            <h2>11. 1대1 다이렉트 최저가 맞춤 견적 신청</h2>
+            <p>
+                내 차종과 주행 패턴에 딱 맞는 가장 저렴한 브랜드 렌탈 요금제와 제휴카드 최대 캐시백 혜택을 전문가가 1대1로 정밀 분석해 드립니다. 
+                아래 상세 내역을 입력해 주시면 대기 시간 없이 신속하고 친절하게 맞춤형 비교 견적 리포트를 무료로 발송해 드립니다.
+            </p>
+
+            <div class="form-container">
+                <form action="#" method="POST" onsubmit="alert('전기차 타이어 최저가 렌탈 상담 신청이 정상 접수되었습니다. 전문 컨설턴트가 빠르게 연락드리겠습니다.'); return false;">
+                    <div class="form-group">
+                        <label for="owner-name">신청자 성함 또는 상호명<span class="req">필수</span></label>
+                        <input type="text" id="owner-name" name="owner_name" required placeholder="예: 홍길동">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="owner-phone">휴대전화 연락처<span class="req">필수</span></label>
+                        <input type="tel" id="owner-phone" name="owner_phone" required placeholder="예: 010-1234-5678" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="car-select">보유 중인 전기차 모델<span class="req">필수</span></label>
+                        <select id="car-select" name="car_model" required>
+                            <option value="">차량을 선택해 주세요</option>
+                            <option value="tesla_y">테슬라 모델Y (19인치 / 20인치 / 21인치)</option>
+                            <option value="tesla_3">테슬라 모델3 하이랜드 (18인치 / 19인치)</option>
+                            <option value="ioniq_5">현대 아이오닉5 (19인치 / 20인치)</option>
+                            <option value="ioniq_6">현대 아이오닉6 (18인치 / 20인치)</option>
+                            <option value="ev6">기아 EV6 (19인치 / 20인치 / 21인치 GT)</option>
+                            <option value="ev9">기아 EV9 (19인치 / 20인치 / 21인치)</option>
+                            <option value="gv60_gv70">제네시스 GV60 / GV70 전동화</option>
+                            <option value="niro_kona">기아 니로 EV / 현대 코나 일렉트릭</option>
+                            <option value="porter_bongo">포터2 일렉트릭 / 봉고3 EV (전기 화물)</option>
+                            <option value="etc_imported">기타 수입 전기차 (벤츠 EQ, BMW i, 아우디 e-트론 등)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-period">희망 약정 기간 선택<span class="req">필수</span></label>
+                        <select id="preferred-period" name="rental_period" required>
+                            <option value="36">36개월 알뜰 표준 플랜 (가장 추천)</option>
+                            <option value="24">24개월 주행거리 집중형 플랜</option>
+                            <option value="12">12개월 초단기 영업용 플랜</option>
+                            <option value="48">48개월 최저 월납입금 플랜</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="annual-distance">연간 예상 주행거리<span class="req">필수</span></label>
+                        <select id="annual-distance" name="annual_distance" required>
+                            <option value="under15k">15,000 km 이하 (일반 출퇴근)</option>
+                            <option value="25k">15,000 km 초과 ~ 25,000 km 이하</option>
+                            <option value="35k">25,000 km 초과 ~ 35,000 km 이하 (장거리)</option>
+                            <option value="over35k">35,000 km 초과 (영업/배달/택시)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>희망하는 무료 패키지 및 혜택 (중복 선택 가능)</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-label"><input type="checkbox" name="opt_damage" value="Y" checked> 무상 파손 보증 1대1 신품 교체</label>
+                            <label class="checkbox-label"><input type="checkbox" name="opt_align" value="Y" checked> 휠 얼라인먼트 무상 측정 교정</label>
+                            <label class="checkbox-label"><input type="checkbox" name="opt_card" value="Y" checked> 제휴카드 청구할인 매월 최대 혜택</label>
+                            <label class="checkbox-label"><input type="checkbox" name="opt_visit" value="Y"> 집 앞 방문 장착 케어 서비스</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiry-memo">추가 요청 사항 및 궁금한 점</label>
+                        <textarea id="inquiry-memo" name="inquiry_text" rows="5" placeholder="예: 현재 테슬라 모델Y 19인치 출고 타이어 마모가 심합니다. 소음이 적고 승차감이 좋은 타이어 추천과 함께 제휴카드 월 실적 30만 원 기준 실납부금액 견적서를 받아보고 싶습니다."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">전기차 타이어 맞춤 견적 리포트 무료 신청</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 12 -->
+        <section id="sec-external">
+            <h2>12. 신뢰할 수 있는 공식 외부 참고 자료</h2>
+            <p>
+                전기차 타이어의 성능 규격, 안전성 인증 및 모빌리티 제도에 대한 공신력 높은 공식 기관 사이트 목록입니다. 
+                더욱 깊이 있는 기술적 정보와 인증 체계를 확인하실 수 있습니다.
+            </p>
+
+            <div class="external-reference">
+                <ul>
+                    <li>
+                        <a href="https://tirerentxtrusto.koreahankang.com" target="_blank" rel="noopener noreferrer">전기차 타이어 테크놀로지 및 렌탈 통합 비교 포털 (reliabledone.com)</a>
+                        <br>전기차 전용 타이어 트레드 마모율 데이터베이스 및 국내 전 렌탈 브랜드 요금표와 무상 케어 서비스 상세 기준을 투명하게 공시하는 모빌리티 전문 플랫폼입니다.
+                    </li>
+                    <li>
+                        <a href="https://namu.wiki/w/%ED%83%80%EC%9D%B4%EC%96%B4" target="_blank" rel="noopener noreferrer">나무위키 타이어 종합 기술 및 역사 개요</a>
+                        <br>타이어의 구조적 구성요소, 컴파운드 원리, 편평비 규격 및 전기차 전용 저소음 흡음재 기술의 발전사가 대중적인 시각에서 폭넓게 서술된 온라인 백과사전입니다.
+                    </li>
+                    <li>
+                        <a href="https://www.kotsa.or.kr" target="_blank" rel="noopener noreferrer">한국교통안전공단 자동차안전연구원 공식 웹사이트</a>
+                        <br>국내 자동차 안전기준 준수 평가, 전기차 고전압 배터리 및 고하중 타이어 안전성 검사 기준과 공인 리콜 정보를 제공하는 국가 공식 연구 기관입니다.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </article>
+</main>
+
+  
